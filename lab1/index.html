@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Trgovina</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="lab.css">
+</head>
+<body>
+	<header>
+		<div id="header">
+			<div id="logo">
+			  <img src="slike/logo.jpg" alt="Logo">
+			</div>
+			<div id="tekst">
+				<div id="kategorija"></div>
+			</div>
+			<div id="slike">
+			  <a id="kosarica" href="cart.html" style="position: relative;"><img src="slike/cart.jpg" alt="Košarica">
+				<span id="broj" style="position: absolute; top: 0; right: -10px; font-size: 12px; background-color: red; color: white; border-radius: 50%; padding: 3px 5px;">0</span></a>
+			  <img src="slike/magnifyng.jpg" alt="Tražilica">
+			</div>
+		  </div>
+	</header>
+	<main>
+		<script src="data.js"></script>
+		<div class="kontenjer">
+			<br>
+			<div class="lista">
+				<ul class="niz">
+					<br>
+					<br>
+					<li><a href="##" onclick="prikaziHrana()">Hrana</a></li>
+					<li><a href="##" onclick="prikaziLjubimci()">Kućni ljubimci</a></li>
+					<li><a href="##" onclick="prikaziAutomobili()">Automobili</a></li>
+					<li><a href="##" onclick="prikaziInformatika()">Informatička oprema</a></li>
+					<li><a href="##" onclick="prikaziAlat()">Alati</a></li>
+					<li><a href="##" onclick="prikaziOdjeca()">Odjeća</a></li>
+					<li><a href="##" onclick="prikaziPica()">Pića</a></li>
+					<li><a href="##" onclick="prikaziUmjetnina()">Umjetnine</a></li>
+					<li><a href="##" onclick="prikaziSport()">Sportska oprema</a></li>
+					<li><a href="##" onclick="prikaziObuca()">Obuća</a></li>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h2 id="Briši"><a href="##" onclick="obrisi()">Obriši košaricu</a></h2>
+				</ul>
+			</div>
+			<br>
+			<div class="inf" id="Informacije">
+				<br>
+				<div><a href="">Kontakt</a></div>
+				<div><a href="">Newsletter</a></div>
+				<div><a href="">Pretplati se</a></div>
+				<br>
+			</div>
+			<div class="slika" id="Naslovna">
+				<img src="slike/background.jpg"	alt="Pozadina">			
+			</div>
+				<div class="skriveni" id="hrana" style="display:none">
+					<div class="product">
+						<img src="slike/meat.jpg" alt="Meso">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj" href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Meso</a>
+						</div>
+					  </div>
+					  <div class="product">
+						<img src="slike/vegetables.jpg" alt="Povrće">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Povrće</a>
+						</div>
+					  </div>
+					  <div class="product">
+						<img src="slike/fruit.jpg" alt="Voće">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Voće</a>
+						</div>
+					  </div>
+					  <div class="product">
+						<img src="slike/dairy.jpg" alt="Mliječni proizvodi">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Mliječni proizvodi</a>
+						</div>
+					  </div>
+					  <div class="product">
+						<img src="slike/bread.jpg" alt="Kruh">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Kruh</a>
+						</div>
+					  </div>
+				</div>
+				<div class="skriveni" id="ljubimci" style="display:none">
+						<div class="product">
+							<img src="slike/dog_food.jpg" alt="Psećja hrana">
+							<div class="overlay">
+							  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+							  <a class="icon2" >Psećja hrana</a>
+							</div>
+						</div>
+							<div class="product">
+								<img src="slike/cat_food.jpg" alt="Mačja hrana">
+								<div class="overlay">
+								  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+								  <a class="icon2" >Mačja hrana"</a>
+								</div>
+							</div>
+								<div class="product">
+									<img src="slike/dog_toys.jpg" alt="Psećje igračke">
+									<div class="overlay">
+									  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+									  <a class="icon2" >Psećje igračke</a>
+									</div>
+								</div>
+							<div class="product">
+									<img src="slike/cat_toys.jpg" alt="Mačje igračke">
+									<div class="overlay">
+									  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+									  <a class="icon2" >Mačje igračke</a>
+									</div>
+								</div>
+								<div class="product">
+									<img src="slike/pet.jpg" alt="Dodatci">
+									<div class="overlay">
+									  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+									  <a class="icon2" >Dodatci</a>
+									</div>
+								</div>
+				</div>
+				<div class="skriveni" id="automobili" style="display:none">
+						<div class="product">
+							<img src="slike/tires.jpg" alt="Gume">
+							<div class="overlay">
+							  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+							  <a class="icon2" >Gume</a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="slike/car_oil.jpg" alt="Ulje">
+							<div class="overlay">
+							  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+							  <a class="icon2" >Ulje</a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="slike/air_freshener.jpg" alt="Osvježivaći zraka">
+							<div class="overlay">
+							  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+							  <a class="icon2" >Osvježivaći zraka</a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="slike/car_el.jpg" alt="Elektronika za automobile">
+							<div class="overlay">
+							  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+							  <a class="icon2" >Elektronika za automobile</a>
+							</div>
+						</div>
+						<div class="product">
+							<img src="slike/car_gear.jpg" alt="Dodatna oprema">
+							<div class="overlay">
+							  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+							  <a class="icon2" >Dodatna oprema</a>
+							</div>
+						</div>
+				</div>
+				<div class="skriveni" id="informatika" style="display:none">
+					<div class="product">
+						<img src="slike/laptop.jpg" alt="Računala i prijenosna računala">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Računala i prijenosna računala</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/headphones.jpg" alt="Slušalice">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Slušalice</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/router.jpg" alt="Mrežna oprema">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Mrežna oprema</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/cables.jpg" alt="Dodatna oprema">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Dodatna oprema</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/softwear.jpg" alt="Softver">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Softver</a>
+						</div>
+					</div>
+				</div>
+				<div class="skriveni" id="alat" style="display:none">
+					<div class="product">
+						<img src="slike/el_tools.jpg" alt="Električni alat">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Elektični alat</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/hadn_tools.jpg" alt="Ručni alat">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Ručni alat</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/garden_tools.jpg" alt="Vrtni alat">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Vrtni alat</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/lawnmower.jpg" alt="Strojevi">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Strojevi</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/gloves.jpg" alt="Sigurnosna oprema">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Sigurnosna oprema</a>
+						</div>
+					</div>
+				</div>
+				<div class="skriveni" id="odjeca" style="display:none">
+					<div class="product">
+						<img src="slike/t-shirt.jpg" alt="Majice">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Majice</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/pants.jpg" alt="Hlače">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Hlače</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/dress.jpg" alt="Haljine">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Haljine</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/jacket.jpg" alt="Jakne i kaputi">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Jakne i kaputi</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/sport_clothes.jpg" alt="Sportska odjeća">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Sportska odjeća</a>
+						</div>
+					</div>
+				</div>
+				<div class="skriveni" id="pica" style="display:none">
+					<div class="product">
+						<img src="slike/wine.jpg" alt="Vina">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Vina</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/alchohol.jpg" alt="Alkoholna pića">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Alkoholna pića</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/juice.jpg" alt="Bezalkoholna pića">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Bezalkoholna pića"</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/hot_drink.jpg" alt="Topli napitci">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Topli napitci</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/energy.jpg" alt="Energetska pića">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Energetska pića</a>
+						</div>
+					</div>
+				</div>
+				<div class="skriveni" id="umjetnine" style="display:none">
+					<div class="product">
+						<img src="slike/painting.jpg" alt="Slike">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Slike</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/sculptures.jpg" alt="Skulpture">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Skulpture</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/photos.jpg" alt="Fotografije">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Fotografije</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/jewelry.jpg" alt="Nakit">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Nakit</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/art_objects.jpg" alt="Umjetnički predmeti">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Umjetnički predmeti</a>
+						</div>
+					</div>
+				</div>
+				<div class="skriveni" id="sport" style="display:none">
+					<div class="product">
+						<img src="slike/ftiness.jpg" alt="Fitnes oprema">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Fitnes oprema</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/racket.jpg" alt="Reketi">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Reketi</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/ball.jpg" alt="Lopte">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Lopte</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/bicycle.jpg" alt="Bicikli">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Bicikli</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/bags.jpg" alt="Sportske torbe">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Sportske torbe</a>
+						</div>
+					</div>
+				</div>
+				<div class="skriveni" id="obuca" style="display:none">
+					<div class="product">
+						<img src="slike/man_shoes.jpg" alt="Muška obuća">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Muška obuća</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/woman_shoes.jpg" alt="Ženska obuća">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Ženska obuća</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/child_shoes.jpg" alt="Dječja obuća">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Dječja obuća</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/running_shoes.jpg" alt="Sportska obuća">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Sportska obuća</a>
+						</div>
+					</div>
+					<div class="product">
+						<img src="slike/flip_flops.jpg" alt="Papuče">
+						<div class="overlay">
+						  <a class="icon1" id="dodaj"  href="##" onclick="povecaj()">Dodaj u košaricu</a>
+						  <a class="icon2" >Papuče</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
+
+			  
