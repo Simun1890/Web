@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHome</title>
+    <link rel="stylesheet" href="/public/styles/style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="grid-item" id="logo">
+        <img src="/public/images/logo.jpg" alt="logo" id="mojlogo">
+    </div>
+
+    <div class="grid-item" id="hello">
+        <span id="naslov"></span>
+        <img src="/public/images/background.jpg" alt="hellllo" id="pozdrav">
+    </div>
+
+    <div class="grid-item" id="navigation">
+            <% let index = 0;
+            categories.forEach(function(category) { %>
+                <button class="mojgumb" id="kat<%= ++index %>"><%= category.name %></button>
+                <br>
+                <br>
+            <% }) %>
+    </div>
+
+
+
+
+    <div class="grid-item" id="kosarica">
+        <div class="kosaricacontainer">
+            <a href="cart/">
+                <button id="cartbttn">
+                    <img src="/public/images/cart.jpg" alt="kosarica" id="cart">
+                    <span id="brojukosarici"></span>
+                </button>
+            </a>
+            <img src="/public/images/magnifyng.jpg" alt="povecalo" id="search">
+        </div>	
+    </div>
+
+    <div class="grid-item" id="kategorija">
+        Hrana
+    </div>
+
+    <div class="grid-item" id="kontakt">
+        <ul class="mojalista">
+            <li><i><b>kontakt</b></i></li>
+            <li><i><b>newsletter</b></i></li>
+            <li><i><b>pretplati se</b></i></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+<script type="module" src="/public/sripts/main.js"></script>
+<script type="module" src="/public/sripts/cart.js"></script>
+</html>
